@@ -63,7 +63,11 @@ class _HomeScreenState extends State<HomeScreen> {
       return ListTile(
         title: Text(data['email']),
         onTap: () {
-          Navigator.of(context).push(MaterialPageRoute(builder: (context) => ChatPage(title: data['email'])));
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => ChatPage(
+                    title: data['email'],
+                    receiverUserId: data['uid'],
+                  )));
         },
       );
     } else {
