@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:messanging/screen/home_screen.dart';
-import 'package:messanging/screen/login_screen.dart';
 import 'package:messanging/services/auth/login_or_register.dart';
 
 class AuthGate extends StatefulWidget {
